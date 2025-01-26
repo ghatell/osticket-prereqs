@@ -15,22 +15,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Windows 10</b> (21H2)
 
-<h2>List of Prerequisites</h2>
-
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
-
-
 <h2>Installation Steps</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-This project demonstrates the installation and configuration of osTicket on an Azure Windows 10 Virtual Machine. First, an Azure Virtual Machine named osticket-vm with 4 vCPUs was created. The VM was accessed using Remote Desktop with the credentials labuser and osTicketPassword1!. After logging into the VM, the osTicket-Installation-Files.zip file was downloaded and unzipped to the desktop for use in the installation process.
+This project demonstrates the installation and configuration of osTicket on an Azure Windows 10 Virtual Machine. First, an Azure Virtual Machine named osticket-vm was created. The VM was accessed using Remote Desktop with the credentials labuser and osTicketPassword1!. After logging into the VM, the osTicket-Installation-Files.zip file was downloaded and unzipped to the desktop for use in the installation process.
 </p>
 <br />
 
