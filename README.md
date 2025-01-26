@@ -26,7 +26,7 @@ This project demonstrates the installation and configuration of osTicket on an A
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/mIU4cNM" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 The first step was to enable IIS (Internet Information Services) with the CGI feature by navigating to the Windows Features settings. Next, several components were installed from the osTicket-Installation-Files folder: PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi), the IIS Rewrite Module (rewrite_amd64_en-US.msi), and the Visual C++ Redistributable (VC_redist.x86.exe). The PHP runtime was configured by creating a directory at C:\PHP and extracting php-7.3.8-nts-Win32-VC15-x86.zip into it. Additionally, MySQL 5.5.62 was installed using the typical setup, with the root user configured with the credentials root/root.
@@ -34,7 +34,7 @@ The first step was to enable IIS (Internet Information Services) with the CGI fe
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/sjuEE3x" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 IIS was then configured to use PHP by registering C:\PHP\php-cgi.exe through the PHP Manager in IIS, followed by restarting the IIS server. The osTicket application was installed by unzipping osTicket-v1.15.8.zip and copying the upload folder to C:\inetpub\wwwroot, where it was renamed to osTicket. After restarting IIS, the application was accessed via the browser, and required PHP extensions (php_imap.dll, php_intl.dll, and php_opcache.dll) were enabled using the PHP Manager.
@@ -42,7 +42,7 @@ IIS was then configured to use PHP by registering C:\PHP\php-cgi.exe through the
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/3UAJDfG" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 The ost-config.php configuration file was prepared by renaming ost-sampleconfig.php to ost-config.php and assigning appropriate permissions by disabling inheritance, removing existing permissions, and granting full access to "Everyone." HeidiSQL was then installed to create a MySQL database named osTicket, which was used during the final osTicket setup in the browser. The setup process involved specifying the helpdesk name, default email address, and database credentials (osTicket, root, root).
@@ -50,7 +50,7 @@ The ost-config.php configuration file was prepared by renaming ost-sampleconfig.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ftmvjmD" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Upon successful installation, the admin panel was accessible at http://localhost/osTicket/scp/login.php, and the end-user portal was available at http://localhost/osTicket/. This project showcases the complete installation and configuration of osTicket in a Windows environment, ready for use as a helpdesk solution.
